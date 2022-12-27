@@ -1,7 +1,7 @@
 # Ghosts In TheMaze
 Project with a maze environment with moving ghosts in which the agent has to navigate to the goal.
 
-# Environment Setup
+## Environment Setup
 The environment for this problem is a maze-like square grid. Some of the cells are open (unblocked) and some are obstructed (blocked). An agent in the environment can move among and occupy the unblocked cells, but cannot enter the blocked cells.
 
 We want to generate many environments to test our agent in, so to do so we will generate these mazes randomly:
@@ -9,10 +9,10 @@ starting with an empty 51 x 51 square grid, iterate through each cell, and with 
 
 However, since these mazes are generated randomly, they may not be very good (since blocks are distributed randomly, it’s entirely possible every cell is blocked, for instance). So we need to check the quality of the maze, and reject ones that are too blocked. Remove any blocks present from the upper left and lower right corners, and make sure there is a path from one to the other (moving in up/down/left/right directions)
 
-# Agent
+## Agent
 The agent is going to start in the upper left corner, and attempt to navigate to the lower right corner. The agent can move in the cardinal directions (up/down/left/right), but only between unblocked squares, and cannot move outside the 51x51 grid. At any time, the agent can ‘see’ the entirety of the maze, and use this information to plan a path.
 
-# The Problem: Ghosts
+## The Problem: Ghosts
 The maze is full of ghosts. Each ghosts starts at a random location in the maze that is reachable from the upper left corner (so that no ghost gets walled off). If the agent enters a cell with a ghost (or a ghost enters the agent’s cell), the agent dies. This is to be avoided.
 
 Each time the agent moves, the ghosts will also move. This means that whatever plan the agent initially generated to traverse the maze may at any point become blocked or invalid. This may mean the agent needs to re-plan its path through the maze to try to avoid the ghosts, and may have to repeatedly re-plan as the ghosts move.
