@@ -27,4 +27,16 @@ The different agents which use different strategies to solve/navigate the maze t
 #### AGENT 1:
 Agent 1 plans a the shortest path through the maze and executes it, ignoring the ghosts. This agent is incredibly efficient - it only has to plan a path once - but it makes no adjustments or updates due to a changing environment.
 
+#### AGENT 2:
+Agent 2 re-plans. At every timestep, Agent 2 recalculates a new path to the goal based on the current information, and executes the next step in this new path. Agent 2 is constantly updating and readjusting based on new information about the ghosts. Agent 2 doesn't make projections about the future. If all paths to goal are blocked, agent 2 attempts to move away from the nearest ghost.
+
+#### AGENT 3:
+Agent 3 forecasts. At every timestep, Agent 3 considers each possible move it might take (including staying in place), and ‘simulates’ the future based on the rules of Agent 2 past that point. For each possible move, this future is simulated some number of times, and then Agent 3 chooses among the moves with greatest success rates in these simulations. Agent 3 can be thought of as Agent 2, plus the ability to imagine the future.
+
+#### AGENT 4:
+Agent 4 is a free strategy agent which balances intelligence and efficiency.
+
+#### LESS INFORMATION AGENTS:
+assuming that the agent loses sight of ghosts when they are in the walls, and cannot make decisions based on the location of these ghosts. How does this affect the performance of each agent?
+
 
