@@ -21,3 +21,10 @@ At every timestep, a ghost picks one of its neighbors (up/down/left/right); if t
 
 Every time the agent moves, the ghosts move according to the above rule. If the agent touches a ghost, the agent dies.
 
+## Strategies To Solve The Environment
+The different agents which use different strategies to solve/navigate the maze to win the game.
+
+#### AGENT 1:
+Agent 1 plans a the shortest path through the maze and executes it, ignoring the ghosts. This agent is incredibly efficient - it only has to plan a path once - but it makes no adjustments or updates due to a changing environment.
+
+
