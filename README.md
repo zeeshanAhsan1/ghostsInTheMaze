@@ -37,6 +37,6 @@ Agent 3 forecasts. At every timestep, Agent 3 considers each possible move it mi
 Agent 4 is a free strategy agent which balances intelligence and efficiency.
 
 #### LESS INFORMATION AGENTS:
-assuming that the agent loses sight of ghosts when they are in the walls, and cannot make decisions based on the location of these ghosts. How does this affect the performance of each agent?
+Assuming that the agent loses sight of ghosts when they are in the walls, and cannot make decisions based on the location of these ghosts. How does this affect the performance of each agent?
 
 
