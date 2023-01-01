@@ -1,4 +1,4 @@
-# Ghosts In TheMaze
+# Ghosts In The Maze
 Project with a maze environment with moving ghosts in which the agent has to navigate to the goal.
 
 ## Environment Setup
